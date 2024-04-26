@@ -13,6 +13,13 @@
 
 
 ##
+## Load: Setting / Module / Grub-Mkconfig-Helper
+##
+
+. "${THE_MAIN_EXT_SETTING_MODULE_DIR_PATH}/grub-mkconfig-helper.sh"
+
+
+##
 ## Load: Setting / Module / Grub-Theme
 ##
 

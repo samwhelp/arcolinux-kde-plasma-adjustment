@@ -39,6 +39,8 @@ main_config_install () {
 
 	#util_error_echo 'main_config_install'
 
+	grub_mkconfig_helper_config_install
+
 	grub_theme_config_install
 
 

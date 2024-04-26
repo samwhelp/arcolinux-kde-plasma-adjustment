@@ -39,6 +39,8 @@ main_asset_install () {
 
 	#util_error_echo 'main_asset_install'
 
+	grub_mkconfig_helper_asset_install
+
 	grub_theme_asset_install
 
 
