@@ -198,6 +198,9 @@ base_var_init () {
 	THE_MASTER_ASSET_DIR_NAME="asset"
 	THE_MASTER_ASSET_DIR_PATH="${THE_MASTER_DIR_PATH}/${THE_MASTER_ASSET_DIR_NAME}"
 
+	THE_MASTER_TMP_DIR_NAME="tmp"
+	THE_MASTER_TMP_DIR_PATH="${THE_MASTER_DIR_PATH}/${THE_MASTER_TMP_DIR_NAME}"
+
 
 	##
 	## ## Master Path / Asset / Sub
@@ -435,6 +438,10 @@ base_var_dump () {
 
 	util_debug_echo "THE_MASTER_ASSET_DIR_NAME=${THE_MASTER_ASSET_DIR_NAME}"
 	util_debug_echo "THE_MASTER_ASSET_DIR_PATH=${THE_MASTER_ASSET_DIR_PATH}"
+	util_debug_echo
+
+	util_debug_echo "THE_MASTER_TMP_DIR_NAME=${THE_MASTER_TMP_DIR_NAME}"
+	util_debug_echo "THE_MASTER_TMP_DIR_PATH=${THE_MASTER_TMP_DIR_PATH}"
 	util_debug_echo
 
 	util_debug_echo
