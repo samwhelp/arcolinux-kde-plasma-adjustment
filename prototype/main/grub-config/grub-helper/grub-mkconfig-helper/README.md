@@ -3,23 +3,12 @@
 # Grub-Theme
 
 
-## Grub Theme Source
-
-| Grub Theme Source |
-| --- |
-| [grub-theme-darkmatter-remix](https://github.com/samwhelp/grub-theme-remix/tree/grub-theme-darkmatter-remix) |
-
-
 ## Config File Path
 
 | Config File Path |
 | --- |
-| [/etc/default/grub.d/theme.cfg](./asset/overlay/etc/default/grub.d/theme.cfg) |
+| [/etc/grub.d/05_debian_theme](./asset/overlay/etc/grub.d/05_debian_theme) |
 
-``` sh
-GRUB_BACKGROUND="/boot/grub/themes/grub-theme-darkmatter-remix/background.jpg"
-GRUB_THEME="/boot/grub/themes/grub-theme-darkmatter-remix/theme.txt"
-```
 
 
 
@@ -28,9 +17,8 @@ GRUB_THEME="/boot/grub/themes/grub-theme-darkmatter-remix/theme.txt"
 
 | Ubuntu Package |
 | --- |
-| [grub2](https://packages.ubuntu.com/noble/grub2) |
 | [grub-common](https://packages.ubuntu.com/noble/grub-common) |
-| [grub-pc](https://packages.ubuntu.com/noble/grub-pc) |
+
 
 
 
