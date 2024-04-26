@@ -24,13 +24,12 @@ GRUB_THEME="/boot/grub/themes/grub-theme-monterey-remix/theme.txt"
 
 
 
-## Ubuntu Package
+## Arch Package
 
-| Ubuntu Package |
+| Arch Package |
 | --- |
-| [grub2](https://packages.ubuntu.com/noble/grub2) |
-| [grub-common](https://packages.ubuntu.com/noble/grub-common) |
-| [grub-pc](https://packages.ubuntu.com/noble/grub-pc) |
+| [grub](https://archlinux.org/packages/core/x86_64/grub/) |
+
 
 
 

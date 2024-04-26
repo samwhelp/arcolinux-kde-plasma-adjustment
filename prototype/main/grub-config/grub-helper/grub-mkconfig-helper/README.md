@@ -13,11 +13,11 @@
 
 
 
-## Ubuntu Package
+## Arch Package
 
-| Ubuntu Package |
+| Arch Package |
 | --- |
-| [grub-common](https://packages.ubuntu.com/noble/grub-common) |
+| [grub](https://archlinux.org/packages/core/x86_64/grub/) |
 
 
 
