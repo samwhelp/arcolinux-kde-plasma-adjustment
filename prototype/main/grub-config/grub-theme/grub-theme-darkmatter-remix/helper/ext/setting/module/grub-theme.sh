@@ -21,13 +21,14 @@ grub_theme_var_init () {
 
 	THE_DOWNLOAD_TMP_DIR_PATH="${THE_MASTER_TMP_DIR_PATH}"
 
-
 	THE_SOURCE_GRUB_THEME_PACKAGE_FILE_URL="https://github.com/samwhelp/grub-theme-remix/archive/refs/heads/grub-theme-darkmatter-remix.tar.gz"
 	THE_TARGET_GRUB_THEME_PACKAGE_FILE_PATH="${THE_DOWNLOAD_TMP_DIR_PATH}/grub-theme-remix-grub-theme-darkmatter-remix.tar.gz"
 
 
+	THE_TARGET_GRUB_THEMES_DIR_PATH="/boot/grub/themes"
+
 	THE_SOURCE_GRUB_THEME_PACKAGE_DIR_PATH="${THE_DOWNLOAD_TMP_DIR_PATH}/grub-theme-remix-grub-theme-darkmatter-remix"
-	THE_TARGET_GRUB_THEME_PACKAGE_DIR_PATH="/boot/grub/themes/grub-theme-darkmatter-remix"
+	THE_TARGET_GRUB_THEME_PACKAGE_DIR_PATH="${THE_TARGET_GRUB_THEMES_DIR_PATH}/grub-theme-darkmatter-remix"
 
 
 
@@ -75,6 +76,10 @@ grub_theme_var_dump () {
 	util_debug_echo "THE_SOURCE_GRUB_THEME_PACKAGE_FILE_URL=${THE_SOURCE_GRUB_THEME_PACKAGE_FILE_URL}"
 	util_debug_echo "THE_TARGET_GRUB_THEME_PACKAGE_FILE_PATH=${THE_TARGET_GRUB_THEME_PACKAGE_FILE_PATH}"
 
+
+	util_debug_echo
+	util_debug_echo "THE_TARGET_GRUB_THEMES_DIR_PATH=${THE_TARGET_GRUB_THEMES_DIR_PATH}"
+
 	util_debug_echo
 	util_debug_echo "THE_SOURCE_GRUB_THEME_PACKAGE_DIR_PATH=${THE_SOURCE_GRUB_THEME_PACKAGE_DIR_PATH}"
 	util_debug_echo "THE_TARGET_GRUB_THEME_PACKAGE_DIR_PATH=${THE_TARGET_GRUB_THEME_PACKAGE_DIR_PATH}"
@@ -120,6 +125,8 @@ grub_theme_config_install () {
 
 
 	mod_grub_theme_config_install
+
+	grub_system_update_grub
 
 
 
@@ -244,8 +251,21 @@ mod_grub_theme_asset_install () {
 
 
 	##
+	## Prepare Install Dir
+	##
+
+	util_error_echo
+	util_error_echo sudo install -dm755 "${THE_TARGET_GRUB_THEMES_DIR_PATH}"
+	sudo install -dm755 "${THE_TARGET_GRUB_THEMES_DIR_PATH}"
+
+
+	##
 	## Install
 	##
+
+	util_error_echo
+	util_error_echo sudo cp -rf "${THE_SOURCE_GRUB_THEME_PACKAGE_DIR_PATH}/." "${THE_TARGET_GRUB_THEME_PACKAGE_DIR_PATH}"
+	sudo cp -rf "${THE_SOURCE_GRUB_THEME_PACKAGE_DIR_PATH}/." "${THE_TARGET_GRUB_THEME_PACKAGE_DIR_PATH}"
 
 
 	return 0

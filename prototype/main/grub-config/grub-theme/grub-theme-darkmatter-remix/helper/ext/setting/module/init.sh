@@ -6,6 +6,13 @@
 
 
 ##
+## Load: Setting / Module / Grub-System
+##
+
+. "${THE_MAIN_EXT_SETTING_MODULE_DIR_PATH}/grub-system.sh"
+
+
+##
 ## Load: Setting / Module / Grub-Theme
 ##
 
