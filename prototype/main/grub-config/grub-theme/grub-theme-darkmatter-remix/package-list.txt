@@ -11,9 +11,9 @@
 ## ## Package / Grub
 ##
 
-grub2
+#grub2
 
-#grub-common
+grub-common
 #grub-pc
 
 
