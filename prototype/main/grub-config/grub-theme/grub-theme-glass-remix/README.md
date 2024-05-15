@@ -7,7 +7,7 @@
 
 | Grub Theme Source |
 | --- |
-| [grub-theme-monterey-remix](https://github.com/samwhelp/grub-theme-remix/tree/grub-theme-monterey-remix) |
+| [grub-theme-glass-remix](https://github.com/samwhelp/grub-theme-glass-remix) |
 
 
 ## Config File Path
@@ -17,19 +17,20 @@
 | [/etc/default/grub.d/theme.cfg](./asset/overlay/etc/default/grub.d/theme.cfg) |
 
 ``` sh
-GRUB_BACKGROUND="/boot/grub/themes/grub-theme-monterey-remix/background.jpg"
-GRUB_THEME="/boot/grub/themes/grub-theme-monterey-remix/theme.txt"
+GRUB_BACKGROUND="/boot/grub/themes/grub-theme-glass-remix/background.jpg"
+GRUB_THEME="/boot/grub/themes/grub-theme-glass-remix/theme.txt"
 ```
 
 
 
 
-## Arch Package
+## Ubuntu Package
 
-| Arch Package |
+| Ubuntu Package |
 | --- |
-| [grub](https://archlinux.org/packages/core/x86_64/grub/) |
-
+| [grub2](https://packages.ubuntu.com/noble/grub2) |
+| [grub-common](https://packages.ubuntu.com/noble/grub-common) |
+| [grub-pc](https://packages.ubuntu.com/noble/grub-pc) |
 
 
 

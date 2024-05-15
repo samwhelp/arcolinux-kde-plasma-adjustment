@@ -82,9 +82,9 @@ grub_system_config_recreate () {
 	util_error_echo
 
 
-	#mod_grub_system_update_grub
+	mod_grub_system_update_grub
 
-	mod_grub_system_grub_mkconfig
+	#mod_grub_system_grub_mkconfig
 
 
 	util_error_echo

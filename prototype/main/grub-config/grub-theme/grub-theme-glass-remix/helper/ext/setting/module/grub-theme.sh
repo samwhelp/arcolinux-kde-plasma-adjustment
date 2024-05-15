@@ -21,14 +21,14 @@ grub_theme_var_init () {
 
 	THE_DOWNLOAD_TMP_DIR_PATH="${THE_MASTER_TMP_DIR_PATH}"
 
-	THE_SOURCE_GRUB_THEME_PACKAGE_FILE_URL="https://github.com/samwhelp/grub-theme-remix/archive/refs/heads/grub-theme-monterey-remix.tar.gz"
-	THE_TARGET_GRUB_THEME_PACKAGE_FILE_PATH="${THE_DOWNLOAD_TMP_DIR_PATH}/grub-theme-remix-grub-theme-monterey-remix.tar.gz"
+	THE_SOURCE_GRUB_THEME_PACKAGE_FILE_URL="https://github.com/samwhelp/grub-theme-glass-remix/archive/refs/heads/main.tar.gz"
+	THE_TARGET_GRUB_THEME_PACKAGE_FILE_PATH="${THE_DOWNLOAD_TMP_DIR_PATH}/grub-theme-glass-remix-main.tar.gz"
 
 
 	THE_TARGET_GRUB_THEMES_DIR_PATH="/boot/grub/themes"
 
-	THE_SOURCE_GRUB_THEME_PACKAGE_DIR_PATH="${THE_DOWNLOAD_TMP_DIR_PATH}/grub-theme-remix-grub-theme-monterey-remix"
-	THE_TARGET_GRUB_THEME_PACKAGE_DIR_PATH="${THE_TARGET_GRUB_THEMES_DIR_PATH}/grub-theme-monterey-remix"
+	THE_SOURCE_GRUB_THEME_PACKAGE_DIR_PATH="${THE_DOWNLOAD_TMP_DIR_PATH}/grub-theme-glass-remix-main"
+	THE_TARGET_GRUB_THEME_PACKAGE_DIR_PATH="${THE_TARGET_GRUB_THEMES_DIR_PATH}/grub-theme-glass-remix"
 
 
 
