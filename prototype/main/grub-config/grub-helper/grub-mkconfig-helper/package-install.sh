@@ -75,6 +75,9 @@ main_package_install () {
 	# sudo dnf install $(main_package_find_list_raw)
 	# sudo dnf install $(main_package_find_list)
 
+
+	return 0
+
 }
 
 ##
